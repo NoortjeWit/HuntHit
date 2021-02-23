@@ -9,10 +9,7 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <div class="navbar-nav" routerLinkActive="active">
-      <a class="nav-item nav-link" [routerLink]="['/home']">Movies</a>
-      <a class="nav-item nav-link" [routerLink]="['/home']">Series</a>
-      <a class="nav-item nav-link disabled" [routerLink]="['/home']" *ngIf="!loginService.user"><i class="fa fa-star" aria-hidden="true"></i> Favorites</a>
-      <a class="nav-item nav-link" *ngIf="loginService.user" (click)='showFavorites()'><i class="fa fa-star"></i> Favorites</a>
+      <a class="nav-item nav-link" [routerLink]="['/home']">Opdrachten</a>
       <a class="nav-item nav-link" [routerLink]="['/admin']" *ngIf="loginService.isAdmin()">Admin</a>
     </div>
 
@@ -27,8 +24,8 @@
         <div class="dropdown-menu dropdown-menu-right sizing bg-light" aria-labelledby="navbarDropdown">
           <h4 class="p-3 text-center ">Suggested for you:</h4>
           <div class="dropdown-divider"></div>
-          <app-videoSuggestion [video]="videoSuggestion" (click)="selectVideo(videoSuggestion)" ></app-videoSuggestion>
-          <app-videoSuggestion [video]="videoSuggestion2" (click)="selectVideo(videoSuggestion2)"></app-videoSuggestion>
+<!---          <app-videoSuggestion [video]="videoSuggestion" (click)="selectVideo(videoSuggestion)" ></app-videoSuggestion>
+          <app-videoSuggestion [video]="videoSuggestion2" (click)="selectVideo(videoSuggestion2)"></app-videoSuggestion>-->
         </div>
       </li>
       <app-login> </app-login>

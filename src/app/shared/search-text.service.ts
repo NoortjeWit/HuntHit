@@ -11,7 +11,7 @@ export class SearchTextService {
 
   setSearchText(text: string){
     this.searchText = text;
-    this.videoService.setFilteredVideos2(this.searchText);
+    //this.videoService.setFilteredVideos2(this.searchText);
   }
 
   getSearchText(){

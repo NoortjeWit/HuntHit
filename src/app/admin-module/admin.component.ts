@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { FormControl, FormGroup, Validators } from "@angular/forms";
 import { environment } from "src/environments/environment";
 import { videos} from '../shared/stubs/videos';
-import { IVideo } from '../video-module/video/video.interface';
+//import { IVideo } from '../video-module/video/video.interface';
 
 @Component({
   selector: "app-admin",
@@ -30,7 +30,7 @@ export class AdminComponent implements OnInit {
 
     if (environment.enableStub) {
       console.log("stubs enabled");
-      videos.push(this.addMovieForm.value as IVideo);
+      //videos.push(this.addMovieForm.value as IVideo);
       this.addMovieForm.reset();
     }
 

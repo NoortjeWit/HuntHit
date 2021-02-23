@@ -1,6 +1,6 @@
 import { categories } from "./stubs/categories";
 import { Injectable, OnInit } from "@angular/core";
-import { IVideo } from "../video-module/video/video.interface";
+//import { IVideo } from "../video-module/video/video.interface";
 import { returnVideoListStubs } from "./stubs/videos";
 import { HttpClient } from "@angular/common/http";
 import { map } from "rxjs/operators";
@@ -10,13 +10,14 @@ import { environment } from "src/environments/environment";
 @Injectable({
   providedIn: "root"
 })
+
 export class VideoListService implements OnInit {
   private apiKey: string = "AIzaSyDVKO0BdJZ-QN0iFju-0VPUjGS9LutIOo0";
   //private apiKey: string = "AIzaSyBWyCSXgf_0tXnmavsH9lRhcxV5aPA3SKM";
   //private apiKey: string = "AIzaSyBzcxTIAnAie2aFS_BD2KuXncrwChVLNDQ";
   private url: string;
 
-  private filteredVideos: Observable<IVideo[]>;
+  //private filteredVideos: Observable<IVideo[]>;
   private categoryList: any;
   showFavorites: boolean;
 
@@ -39,7 +40,7 @@ export class VideoListService implements OnInit {
   }
 
 
-
+/*
   getFilteredVideos(): Observable<IVideo[]> {
     return this.filteredVideos;
   }
@@ -150,5 +151,6 @@ export class VideoListService implements OnInit {
         });
       })
     );
-  }
+  }*/
 }
+

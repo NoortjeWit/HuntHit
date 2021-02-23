@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { SocialLoginModule, AuthServiceConfig, GoogleLoginProvider } from 'angularx-social-login';
 
 import { NavBarModule } from './nav-bar/nav-bar.module';
-import { VideoModule } from './video-module/video.module';
+//import { VideoModule } from './video-module/video.module';
 import { AdminModule } from './admin-module/admin.module';
 
 import { AppComponent } from './app.component';
@@ -39,7 +39,7 @@ export function provideConfig() {
     BrowserModule,
     NavBarModule,
     SocialLoginModule,
-    VideoModule,
+    //VideoModule,
     HttpClientModule,
     AppRoutingModule,
     AdminModule
