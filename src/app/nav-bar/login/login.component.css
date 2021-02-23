@@ -1,0 +1,12 @@
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item,
+.nav-link {
+    cursor: pointer;
+}
+
+img {
+    border-radius: 50%;
+}

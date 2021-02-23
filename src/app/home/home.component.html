@@ -1,0 +1,41 @@
+
+<!-- <div class="container my-3 mx-auto text-center">
+  <button (click)="getTestVideo()">get video</button>
+  <div *ngIf="videoHeaderTest">
+    <p>Logged in</p>
+    <p>{{ videoHeaderTest | async | json }}</p>
+  </div>
+</div> -->
+
+<!-- searched videos list -->
+<h3 *ngIf="searchService.getSearchText() != undefined">Search results</h3>
+<app-video-list *ngIf="searchService.getSearchText() != undefined" [videoList]="lookForStuff() | async"
+	class="py-3 mx-3 my-3"></app-video-list>
+
+<!-- preview of selected video -->
+<app-preview *ngIf="previewService.getSelectedVideo() != undefined" [video]="previewService.getSelectedVideo()"
+	id="app-preview"></app-preview>
+
+<!-- genre video bars -->
+<div *ngIf="videoService.showFavorites" >
+  <h3 class="pt-3">My Liked Videos</h3>
+  <app-video-list *ngIf="loginService.user" [videoList]="videosLiked | async"></app-video-list>
+</div>
+
+<h3 class="pt-3">Music</h3>
+<app-video-list [videoList]="videosMusic | async"></app-video-list>
+
+<!-- <h3>Movies</h3>
+<app-video-list [videoList]="(videosMovies| async)"></app-video-list>
+
+<h3>Comedy</h3>
+<app-video-list [videoList]="(videosComedy | async)"></app-video-list>
+
+<h3>Gaming</h3>
+<app-video-list [videoList]="(videosGaming | async)"></app-video-list>
+
+<h3>Pets & Animals</h3>
+<app-video-list [videoList]="(videosAnimals | async)"></app-video-list>
+
+<h3>Science & Technology</h3>
+<app-video-list [videoList]="(videosTechnology | async)"></app-video-list> -->
