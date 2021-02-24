@@ -7,9 +7,11 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { AdminComponent } from './admin-module/admin.component';
 import { FormfillGuard } from './formfill.guard';
 import { AdminGuard} from './admin.guard';
+import { OpdrachtenComponent} from './opdrachten/opdrachten.component';
 
 const appRoutes: Routes = [
   { path: "home", component: HomeComponent },
+  { path: "opdrachten", component: OpdrachtenComponent},
   { path: "admin", component: AdminComponent, canActivate: [AdminGuard], canDeactivate: [FormfillGuard] },
   { path: "", redirectTo: "/home", pathMatch: "full" },
   { path: "**", component: NotFoundComponent },
