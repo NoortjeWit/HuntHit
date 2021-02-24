@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AuthTokenInterceptor } from './shared/oauth-token-header.interceptor';
+import { AntwoordenComponent } from './antwoorden/antwoorden.component';
 
 const google_oauth_client_id: string = '654208204631-94fdph95gsm7dfvmtfjq7egpa41fcsk3.apps.googleusercontent.com';
 const googleLoginOptions: any = {
@@ -34,8 +35,9 @@ export function provideConfig() {
   declarations: [
     AppComponent,
     NotFoundComponent,
-    HomeComponent
-  ],
+    HomeComponent,
+    AntwoordenComponent
+   ],
   imports: [
     BrowserModule,
     NavBarModule,

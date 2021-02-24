@@ -8,10 +8,12 @@ import { AdminComponent } from './admin-module/admin.component';
 import { FormfillGuard } from './formfill.guard';
 import { AdminGuard} from './admin.guard';
 import { OpdrachtenComponent} from './opdrachten/opdrachten.component';
+import { AntwoordenComponent } from './antwoorden/antwoorden.component';
 
 const appRoutes: Routes = [
   { path: "home", component: HomeComponent },
   { path: "opdrachten", component: OpdrachtenComponent},
+  { path: "antwoorden", component: AntwoordenComponent},
   { path: "admin", component: AdminComponent, canActivate: [AdminGuard], canDeactivate: [FormfillGuard] },
   { path: "", redirectTo: "/home", pathMatch: "full" },
   { path: "**", component: NotFoundComponent },
