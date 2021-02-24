@@ -8,6 +8,7 @@ import { SocialLoginModule, AuthServiceConfig, GoogleLoginProvider } from 'angul
 import { NavBarModule } from './nav-bar/nav-bar.module';
 //import { VideoModule } from './video-module/video.module';
 import { AdminModule } from './admin-module/admin.module';
+import { OpdrachtenModule } from './opdrachten/opdrachten.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -42,7 +43,8 @@ export function provideConfig() {
     //VideoModule,
     HttpClientModule,
     AppRoutingModule,
-    AdminModule
+    AdminModule,
+    OpdrachtenModule
   ],
   providers: [
     {
