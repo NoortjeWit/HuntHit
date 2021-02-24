@@ -4,7 +4,7 @@
   color: #444;
   cursor: pointer;
   padding: 18px;
-  width: 50%;
+  width: 60%;
   border: none;
   text-align: left;
   outline: none;
@@ -19,9 +19,8 @@
 /* Style the collapsible content. Note: hidden by default */
 .content {
   padding: 0 18px;
-  display: hidden;
   overflow: hidden;
   background-color: #f1f1f1;
-  width: 50%;
+  width: 60%;
   color: black
 }
