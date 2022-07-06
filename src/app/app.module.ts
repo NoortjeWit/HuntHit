@@ -16,14 +16,14 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { AuthTokenInterceptor } from './shared/oauth-token-header.interceptor';
 import { AntwoordenComponent } from './antwoorden/antwoorden.component';
 
-const google_oauth_client_id: string = '654208204631-94fdph95gsm7dfvmtfjq7egpa41fcsk3.apps.googleusercontent.com';
-const googleLoginOptions: any = {
-  scope: 'https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/youtubepartner https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/youtube.force-ssl'
-};
+const google_oauth_client_id: string = '540698685876-7am742o1p5cb684kquk8ptn1u8v9efdi.apps.googleusercontent.com';
+// const googleLoginOptions: any = {
+//   scope: 'https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/youtubepartner https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/youtube.force-ssl'
+// };
 let config = new AuthServiceConfig([
   {
     id: GoogleLoginProvider.PROVIDER_ID,
-    provider: new GoogleLoginProvider(google_oauth_client_id, googleLoginOptions)
+    provider: new GoogleLoginProvider(google_oauth_client_id)
   }
 ]);
 

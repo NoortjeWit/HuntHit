@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "chillflix": {
+    "hunthit": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/chillflix",
+            "outputPath": "dist/hunthit",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -78,21 +78,21 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "chillflix:build"
+            "browserTarget": "hunthit:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "chillflix:build:production"
+              "browserTarget": "hunthit:build:production"
             },
             "stub": {
-              "browserTarget": "chillflix:build:stub"
+              "browserTarget": "hunthit:build:stub"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "chillflix:build"
+            "browserTarget": "hunthit:build"
           }
         },
         "test": {
@@ -122,18 +122,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "chillflix:serve"
+            "devServerTarget": "hunthit:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "chillflix:serve:production"
+              "devServerTarget": "hunthit:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "chillflix",
+  "defaultProject": "hunthit",
   "cli": {
     "analytics": false
   }

@@ -40,7 +40,7 @@ export class LoginService implements OnInit {
 
   isAdmin(): boolean {
     if (this.user) {
-      if (this.user.email == "chantalschot91@gmail.com" || this.user.email == "noortjewittink@gmail.com") {
+      if (this.user.email == "hunthitharderwijk@gmail.com" || this.user.email == "noortjewittink@gmail.com") {
         return true;
       }
       else{
